@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Poppins:wght@100;500&family=Volkhov&display=swap" rel="stylesheet">
+    <title>2048</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+</div >
+    <div class="container">
+
+        <div class="titre">
+            <h1>2048</h1>
+            <p id="score-container">score :   <br> </p>
+            <button id="monBtn" class="retry"><i class="material-icons">
+                refresh
+                </i></button>
+        </div>
+            <h2>Reliez les nombres et obtenez la <strong>tuile 2048 !</strong></h2>
+            <div class="placement">
+                <div class="app">
+                    <div class="box 1" id="case1"></div>
+                    <div class="box 2" id="case2"></div>
+                    <div class="box 3" id="case3"></div>
+                    <div class="box 4" id="case4"></div>
+                    <div class="box 5" id="case5"></div>
+                    <div class="box 6" id="case6"></div>
+                    <div class="box 7" id="case7"></div>
+                    <div class="box 8" id="case8"></div>
+                    <div class="box 9" id="case9"></div>
+                    <div class="box 10" id="case10"></div>
+                    <div class="box 11" id="case11"></div>
+                    <div class="box 12" id="case12"></div>
+                    <div class="box 13" id="case13"></div>
+                    <div class="box 14" id="case14"></div>
+                    <div class="box 15" id="case15"></div>
+                    <div class="box 16" id="case16"></div>
+                </div>  
+        </div>
+
+        <p id="regle"><strong>COMMENT JOUER :</strong> Utilisez les <strong>flèches du clavier</strong> pour déplacer les tuiles. Quand deux tuiles avec le même nombre se touchent, <strong>elles fusionnent !</strong></p>
+        <div class="gameover">
+            <h3 id="Fin">Jeu terminé!</h3>
+            <button class="retry1">Recommencer</button>
+        </div>
+        <div class="gagner">
+            <h3 id="win">Bravo !<br> Vous avez gagné !</h3>
+            <button class="continuer">Continuer</button>
+        <button class="retry2">Recommencer</button>
+    </div>
+
+</div>
+<!-- <div class="pseudo">
+    <form class="formpseudo" method="get" action="page.htm">
+        <label for="name" class="saisir">Veuillez saisir votre pseudo !</label>
+    <input class="champpseudo" type="text" name="name" id="name" required>
+    </form>
+</div> -->
+
+<script src="jquery-3.6.0.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
