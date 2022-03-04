@@ -25,6 +25,7 @@ const continue1 = document.querySelector(".continuer");
 const win = document.querySelector(".gagner");
 const loose = document.querySelector(".gameover");
 let z = 1;
+let p = 1;
 let h = 0;
 const tableau = [
   case1,
@@ -2509,12 +2510,22 @@ document.addEventListener("keydown", function (event) {
       e.style.background = "#D96DF1";
       e.style.fontSize = "45px";
     }
+    if (e.innerHTML == 4096) {
+      e.style.background = "#F5ED12";
+      e.style.fontSize = "45px";
+    }
   });
 
   tableau.forEach((e) => {
     if (e.innerHTML == 2048 && z < 2) {
       win.classList.add("gagnervisible");
       z++;
+    }
+  });
+  tableau.forEach((e) => {
+    if (e.innerHTML == 4096 && p < 2) {
+      window.alert("Bravo : Joris (le jeune biensur)");
+      p++;
     }
   });
   event.preventDefault();
@@ -2557,6 +2568,10 @@ tableau.forEach((e) => {
   }
   if (e.innerHTML == 2048) {
     e.style.background = "#D96DF1";
+    e.style.fontSize = "45px";
+  }
+  if (e.innerHTML == 4096) {
+    e.style.background = "#F5ED12";
     e.style.fontSize = "45px";
   }
 });
