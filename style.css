@@ -4,6 +4,32 @@ body {
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   margin: 0;
 }
+h1 {
+  text-shadow: 10px 5px 5px #171c7a;
+  padding-top: 20px;
+  color: #c7af4e;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  display: block;
+  font-size: 80px;
+  font-weight: bold;
+}
+h2 {
+  font-weight: lighter;
+  color: #c7af4e;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+#regle {
+  font-weight: lighter;
+  color: #c7af4e;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+/* Grid 2048 */
 .container {
   position: absolute;
   left: 0;
@@ -111,31 +137,6 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-h1 {
-  text-shadow: 10px 5px 5px #171c7a;
-  padding-top: 20px;
-  color: #c7af4e;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-  margin: 0;
-  display: block;
-  font-size: 80px;
-  font-weight: bold;
-}
-h2 {
-  font-weight: lighter;
-  color: #c7af4e;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.65;
-}
-#regle {
-  font-weight: lighter;
-  color: #c7af4e;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.65;
-}
-
 #monBtn {
   box-shadow: 10px 5px 5px #171c7a;
   height: 58px;
@@ -156,6 +157,7 @@ h2 {
 #monBtn:hover {
   background-color: #decebf;
 }
+
 .material-icons {
   color: white;
   font-size: 40px;
@@ -186,10 +188,10 @@ h2 {
   width: 90px;
   height: 58px;
 }
+
+/* Background */
 .area {
   position: absolute;
-  /* background: #4e54c8;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
   width: 100%;
   height: 120%;
 }
@@ -302,40 +304,3 @@ h2 {
     border-radius: 50%;
   }
 }
-
-/* .pseudo {
-  text-align: center;
-  position: absolute;
-  margin: 0 auto;
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(255, 255, 0, 0.322);
-}
-
-.formpseudo {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-53%, -50%);
-  border-radius: 8px;
-  width: 470px;
-  height: 200px;
-  background: #87614a;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.saisir {
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  padding-bottom: 20px;
-}
-
-.champpseudo {
-  width: 150px;
-  height: 20px;
-  border-radius: 8px;
-} */

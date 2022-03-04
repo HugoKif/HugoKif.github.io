@@ -71,7 +71,7 @@ for (let i = 0; i < 2; i++) {
   tableau[random21].innerHTML = random;
 }
 
-//-------------------------------------------------------------------------------------
+//Bouton retry & continuer-------------------------------------------------------------------------------------
 retry.addEventListener("click", () => {
   score *= 0;
   tableau.forEach((e) => {
@@ -163,7 +163,8 @@ retry1.addEventListener("click", () => {
 continue1.addEventListener("click", () => {
   win.classList.remove("gagnervisible");
 });
-//-------------------------------------------------------------------------------------
+
+//Event à chaque keydown-------------------------------------------------------------------------------------
 document.addEventListener("keydown", function (event) {
   if (event.code == "ArrowLeft") {
     if (ligne1[1].innerHTML.length >= 1) {
@@ -2372,7 +2373,7 @@ document.addEventListener("keydown", function (event) {
     }
   }
 
-  //---------------------------------------------------------------------------------------
+  //Spawn des chiffres & score---------------------------------------------------------------------------------------
   if (
     event.code == "ArrowUp" ||
     event.code == "ArrowDown" ||
@@ -2470,7 +2471,7 @@ document.addEventListener("keydown", function (event) {
   }
   h *= 0;
 });
-// Apparition a chaque Keydown---------------------------------------------------------
+// Style a chaque Keydown---------------------------------------------------------
 document.addEventListener("keydown", function (event) {
   tableau.forEach((e) => {
     if (e.innerHTML == 2) {
@@ -2559,11 +2560,3 @@ tableau.forEach((e) => {
     e.style.fontSize = "45px";
   }
 });
-
-// document.addEventListener("keydown", function (event) {})
-// window.addEventListener("scroll", function (e) {
-//   if (event.code == "ArrowDown" || event.code == "ArrowUp") {
-//     window.scrollTo(0, 0);
-//   }
-//   false;
-// });
